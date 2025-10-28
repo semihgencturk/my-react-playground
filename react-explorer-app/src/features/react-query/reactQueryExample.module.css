@@ -1,0 +1,149 @@
+.card {
+  padding: 36px;
+  border-radius: 28px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.96), rgba(241, 245, 249, 0.96));
+  box-shadow: 0 32px 60px rgba(15, 23, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #1e293b;
+}
+
+.description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #475569;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.12);
+  color: #1d4ed8;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.helper {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #933407;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.helper::before {
+  content: "⚠️";
+  font-size: 15px;
+}
+
+.tip {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(219, 234, 254, 0.8), rgba(224, 231, 255, 0.92));
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  box-shadow: 0 20px 40px rgba(79, 70, 229, 0.12);
+  color: #312e81;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.tipIcon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.tipContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tipTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #4338ca;
+}
+
+.tipBody {
+  margin: 0;
+}
+
+.tipCounter {
+  margin: 0;
+  font-size: 14px;
+  color: #312e81;
+}
+
+.tipCounterValue {
+  font-weight: 700;
+  color: #1e40af;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  padding: 18px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.1);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.email {
+  font-size: 14px;
+  color: #475569;
+}

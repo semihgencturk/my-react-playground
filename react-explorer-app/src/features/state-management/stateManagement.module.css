@@ -1,0 +1,290 @@
+.page {
+  min-height: 100vh;
+  padding: 64px 24px 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  background: radial-gradient(circle at top left, #f8fbff 0%, #eef2ff 38%, #fff7fb 100%);
+  color: #0f172a;
+}
+
+.header {
+  max-width: 720px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #2563eb;
+}
+
+.title {
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.lead {
+  margin: 0 auto;
+  max-width: 540px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #475569;
+}
+
+.examples {
+  width: min(820px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 36px;
+  border-radius: 28px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.96), rgba(241, 245, 249, 0.96));
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.1);
+  width: 100%;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #1e293b;
+}
+
+.sectionCopy {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  color: #64748b;
+}
+
+.card {
+  width: 100%;
+  padding: 26px;
+  border-radius: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.95));
+  box-shadow: 0 24px 50px rgba(15, 23, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 64px rgba(15, 23, 42, 0.16);
+}
+
+.themeCard {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease,
+    color 0.22s ease;
+}
+
+.nestedStack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.nestedCard {
+  padding: 22px;
+  border-radius: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.96), rgba(236, 252, 255, 0.94));
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.nestedCardLevel2 {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.96));
+}
+
+.nestedCardLevel3 {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.98), rgba(251, 244, 255, 0.94));
+}
+
+.nestedCardLevel4 {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.98), rgba(255, 247, 222, 0.92));
+}
+
+.metricLabel {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.metricValue {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.textMuted {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--theme-muted, #475569);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.button {
+  appearance: none;
+  border: var(--theme-button-border, none);
+  border-radius: 999px;
+  padding: 11px 22px;
+  background: var(
+    --theme-button-bg,
+    linear-gradient(135deg, #2563eb, #1d4ed8)
+  );
+  color: var(--theme-button-color, #ffffff);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  box-shadow: var(--theme-button-shadow, 0 16px 34px rgba(37, 99, 235, 0.25));
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(
+    --theme-button-hover-shadow,
+    0 20px 40px rgba(37, 99, 235, 0.28)
+  );
+  background: var(
+    --theme-button-hover-bg,
+    linear-gradient(135deg, #2563eb, #1d4ed8)
+  );
+  color: var(--theme-button-hover-color, #ffffff);
+}
+
+.buttonSecondary {
+  background: linear-gradient(135deg, #10b981, #059669);
+  box-shadow: 0 16px 34px rgba(16, 185, 129, 0.25);
+}
+
+.buttonSecondary:hover {
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.28);
+}
+
+.buttonGhost {
+  background: var(--theme-button-bg, transparent);
+  color: var(--theme-button-color, #1e293b);
+  border: 1px solid var(--theme-button-ghost-border, rgba(148, 163, 184, 0.55));
+  box-shadow: var(--theme-button-shadow, none);
+}
+
+.buttonGhost:hover {
+  border-color: var(
+    --theme-button-ghost-hover-border,
+    rgba(99, 102, 241, 0.6)
+  );
+  color: var(--theme-button-hover-color, #4338ca);
+  background: var(--theme-button-hover-bg, transparent);
+  box-shadow: var(--theme-button-hover-shadow, none);
+}
+
+.statStack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.statRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-radius: 18px;
+  background: rgba(226, 232, 240, 0.45);
+}
+
+.statLabel {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #475569;
+}
+
+.statValue {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--theme-badge-bg, rgba(37, 99, 235, 0.12));
+  color: var(--theme-badge-color, #1d4ed8);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(148, 163, 184, 0), rgba(148, 163, 184, 0.45), rgba(148, 163, 184, 0));
+  margin: 6px 0;
+}
+
+.callout {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #475569;
+}
+
+.stackTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--theme-text-strong, #1e293b);
+}
+
+.stackSubtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
