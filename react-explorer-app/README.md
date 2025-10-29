@@ -13,7 +13,7 @@ Spin up the app, pick a card, and trigger the interactions. Each demo nudges you
 - **Dynamic Loading Strategies** – Explore dynamic imports, lazy boundaries, preload hints, prefetch flows, and deferred widgets.
 - **Data Fetching Labs** – Inspect React Query fundamentals, hover-to-prefetch dashboards, and static asset warmups.
 - **Skeleton UX Patterns** – Watch skeleton screens reserve layout and shimmer while API calls resolve.
-- **JSX vs TSX Reference** – Contrast JavaScript and TypeScript React Query implementations to highlight typing ergonomics.
+- **Working With Forms** – React Hook Form examples wired with Hookform Resolver and Zod validation.
 
 ## Upcoming
 
