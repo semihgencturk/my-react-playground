@@ -61,9 +61,9 @@ export default function HomePage() {
         "Watch skeleton screens reserve layout and shimmer while slower API responses resolve.",
     },
     {
-      title: "JSX vs TSX Reference",
+      title: "Working With Forms",
       detail:
-        "Contrast JavaScript and TypeScript React Query components to see typing ergonomics in practice.",
+        "Hands-on React Hook Form examples wired with Hookform Resolver and Zod validation.",
     },
   ];
 

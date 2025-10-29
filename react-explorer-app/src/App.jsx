@@ -5,8 +5,9 @@ import StateManagementPage from "@/features/state-management/StateManagementPage
 import styles from "./App.module.css";
 import SkeletonShowcasePage from "./features/ui-ux/skeleton/SkeletonShowcasePage.js";
 import EfficientLoadingExamplesPage from "./features/efficient-loading/EfficientLoadingExamplesPage.js";
-import EfficientLoadingMoreExamplesPage from "./features/efficient-loading/more-examples/EfficientLoadingMoreExamplesPage.js"
+import EfficientLoadingMoreExamplesPage from "./features/efficient-loading/more-examples/EfficientLoadingMoreExamplesPage.js";
 import EfficientFetchingExamplesPage from "./features/efficient-fetching/EfficientFetchingExamplesPage.js";
+import WorkingWithFormsPage from "@/features/working-with-forms/WorkingWithFormsPage";
 
 export default function App() {
   return (
@@ -62,21 +63,45 @@ export default function App() {
           className={({ isActive }) =>
             isActive ? `${styles.link} ${styles.linkActive}` : styles.link
           }
+          to="/working-with-forms"
+        >
+          Forms
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.linkActive}` : styles.link
+          }
           to="/skeleton-examples"
         >
           Skeleton
         </NavLink>
-
       </nav>
 
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/react-hooks-examples" element={<ReactHooksPage />} />
-        <Route path="/state-management-examples" element={<StateManagementPage />} />
-        <Route path="/efficient-loading-examples" element={<EfficientLoadingExamplesPage/>} />
-        <Route path="/efficient-loading-examples/more-examples" element={<EfficientLoadingMoreExamplesPage/>} />
-        <Route path="/efficient-fetching-examples" element={<EfficientFetchingExamplesPage />} />
-        <Route path="/state-management-examples" element={<StateManagementPage />} />
+        <Route
+          path="/state-management-examples"
+          element={<StateManagementPage />}
+        />
+        <Route
+          path="/efficient-loading-examples"
+          element={<EfficientLoadingExamplesPage />}
+        />
+        <Route
+          path="/efficient-loading-examples/more-examples"
+          element={<EfficientLoadingMoreExamplesPage />}
+        />
+        <Route
+          path="/efficient-fetching-examples"
+          element={<EfficientFetchingExamplesPage />}
+        />
+        <Route path="/working-with-forms" element={<WorkingWithFormsPage />} />
+        <Route
+          path="/state-management-examples"
+          element={<StateManagementPage />}
+        />
         <Route path="/skeleton-examples" element={<SkeletonShowcasePage />} />
       </Routes>
     </BrowserRouter>
