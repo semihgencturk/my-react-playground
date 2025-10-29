@@ -1,0 +1,167 @@
+.skeletonPage {
+  display: grid;
+  gap: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.headerArea {
+  display: grid;
+  gap: 1rem;
+}
+
+.headingTitle {
+  margin: 0;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.headingCopy {
+  margin: 0;
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  color: rgba(15, 23, 42, 0.7);
+  max-width: 64ch;
+}
+
+.grid {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(248, 250, 252, 0.98);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 18px 44px -36px rgba(15, 23, 42, 0.45);
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.cardCopy {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(15, 23, 42, 0.7);
+  line-height: 1.6;
+}
+
+.statGrid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(15, 23, 42, 0.5);
+}
+
+.statValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.testimonialQuote {
+  margin: 0;
+  font-size: 1rem;
+  font-style: italic;
+  color: rgba(15, 23, 42, 0.75);
+}
+
+.testimonialMeta {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(15, 23, 42, 0.6);
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: rgba(226, 232, 240, 0.6);
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.65),
+    rgba(255, 255, 255, 0)
+  );
+  transform: translateX(-100%);
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+.skeletonLine {
+  height: 12px;
+}
+
+.skeletonLineSmall {
+  height: 10px;
+}
+
+.skeletonLineLarge {
+  height: 16px;
+}
+
+.skeletonCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.metaRow {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.portfolioList {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.portfolioItem {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.portfolioTitle {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.portfolioTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.portfolioTag {
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}

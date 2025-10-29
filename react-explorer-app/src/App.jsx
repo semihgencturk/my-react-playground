@@ -3,7 +3,10 @@ import HomePage from "@/pages/home/HomePage";
 import ReactHooksPage from "@/features/react-hooks/ReactHooksPage";
 import StateManagementPage from "@/features/state-management/StateManagementPage";
 import styles from "./App.module.css";
-import ReactQueryExample from "./features/react-query/ReactQueryExample";
+import SkeletonShowcasePage from "./features/ui-ux/skeleton/SkeletonShowcasePage.js";
+import EfficientLoadingExamplesPage from "./features/efficient-loading/EfficientLoadingExamplesPage.js";
+import EfficientLoadingMoreExamplesPage from "./features/efficient-loading/more-examples/EfficientLoadingMoreExamplesPage.js"
+import EfficientFetchingExamplesPage from "./features/efficient-fetching/EfficientFetchingExamplesPage.js";
 
 export default function App() {
   return (
@@ -23,18 +26,9 @@ export default function App() {
           className={({ isActive }) =>
             isActive ? `${styles.link} ${styles.linkActive}` : styles.link
           }
-          to="/react-query-examples"
-        >
-          React Query Examples
-        </NavLink>
-
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? `${styles.link} ${styles.linkActive}` : styles.link
-          }
           to="/react-hooks-examples"
         >
-          React Hooks Examples
+          React Hooks
         </NavLink>
 
         <NavLink
@@ -43,16 +37,47 @@ export default function App() {
           }
           to="/state-management-examples"
         >
-          State Management Examples
+          State Management
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.linkActive}` : styles.link
+          }
+          to="/efficient-loading-examples"
+        >
+          Efficient Loading
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.linkActive}` : styles.link
+          }
+          to="/efficient-fetching-examples"
+        >
+          Efficient Fetching
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? `${styles.link} ${styles.linkActive}` : styles.link
+          }
+          to="/skeleton-examples"
+        >
+          Skeleton
         </NavLink>
 
       </nav>
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/react-query-examples" element={<ReactQueryExample/>} />
         <Route path="/react-hooks-examples" element={<ReactHooksPage />} />
         <Route path="/state-management-examples" element={<StateManagementPage />} />
+        <Route path="/efficient-loading-examples" element={<EfficientLoadingExamplesPage/>} />
+        <Route path="/efficient-loading-examples/more-examples" element={<EfficientLoadingMoreExamplesPage/>} />
+        <Route path="/efficient-fetching-examples" element={<EfficientFetchingExamplesPage />} />
+        <Route path="/state-management-examples" element={<StateManagementPage />} />
+        <Route path="/skeleton-examples" element={<SkeletonShowcasePage />} />
       </Routes>
     </BrowserRouter>
   );

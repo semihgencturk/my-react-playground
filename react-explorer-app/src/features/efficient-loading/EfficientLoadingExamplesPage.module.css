@@ -1,0 +1,91 @@
+.page {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3.5rem);
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #0f172a;
+}
+
+.header {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(15, 23, 42, 0.6);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.1rem, 4vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: rgba(15, 23, 42, 0.72);
+  max-width: 72ch;
+  line-height: 1.7;
+}
+
+.instructionList {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.6rem;
+  color: rgba(15, 23, 42, 0.7);
+  font-size: 0.95rem;
+}
+
+.instructionList li::marker {
+  color: rgba(37, 99, 235, 0.65);
+}
+
+.grid {
+  display: grid;
+  gap: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.moreExamplesLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 0.5rem;
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  background: radial-gradient(circle at top left, #60a5fa 0%, #2563eb 45%, #1d4ed8 100%);
+  color: #f8fafc;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.22);
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.moreExamplesLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgba(30, 64, 175, 0.28);
+  filter: brightness(1.05);
+}
+
+.moreExamplesLink:focus-visible {
+  outline: 3px solid rgba(96, 165, 250, 0.7);
+  outline-offset: 4px;
+}
+
+.moreExamplesLinkIcon {
+  width: 1.1rem;
+  height: 1.1rem;
+  transition: transform 180ms ease;
+}
+
+.moreExamplesLink:hover .moreExamplesLinkIcon {
+  transform: translateX(3px);
+}

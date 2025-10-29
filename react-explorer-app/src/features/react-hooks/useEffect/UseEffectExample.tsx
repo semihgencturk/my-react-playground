@@ -10,14 +10,29 @@ export default function AfterUseStateExample() {
 
   // Effect for count changes
   useEffect(() => {
-    console.log(`[useEffect] Count effect triggered -> ${count}`);
+    console.log(`[useEffect] runs when watcher var changes:
+ Count effect triggered -> ${count}`);
     document.title = `Count: ${count}`;
-  }, [count]); // runs only when count changes
+  }, [count]);
 
   // Effect for name changes
   useEffect(() => {
-    console.log(`[useEffect] Name effect triggered -> ${name}`);
-  }, [name]); // runs only when name changes
+    console.log(
+      `[useEffect] runs when watcher var changes: Name effect triggered -> ${name}`
+    );
+  }, [name]);
+
+  useEffect(() => {
+    console.log(
+      "[useEffect] this runs when Every render (componentDidMount + componnentDidUpdate)"
+    );
+  });
+
+  useEffect(() => {
+    console.log(
+      "[useEffect] this runs when Only on mount/unmount componentDidMount + componnentWillUnmount"
+    );
+  }, []);
 
   return (
     <div className={styles.card}>
@@ -26,7 +41,9 @@ export default function AfterUseStateExample() {
         isolated and predictable.
       </p>
 
-      <span className={styles.consoleNote}>Open the console to observe effect logs</span>
+      <span className={styles.consoleNote}>
+        Open the console to observe effect logs
+      </span>
 
       <div className={styles.metrics}>
         <div className={styles.metric}>

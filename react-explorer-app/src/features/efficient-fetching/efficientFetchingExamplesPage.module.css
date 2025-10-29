@@ -1,0 +1,91 @@
+.page {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3.5rem);
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #0f172a;
+}
+
+.header {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(15, 23, 42, 0.6);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2.1rem, 4vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: rgba(15, 23, 42, 0.72);
+  max-width: 75ch;
+  line-height: 1.7;
+}
+
+.instructionList {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.6rem;
+  color: rgba(15, 23, 42, 0.7);
+  font-size: 0.95rem;
+}
+
+.instructionList li::marker {
+  color: rgba(14, 116, 144, 0.7);
+}
+
+.grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3rem);
+}
+
+.exampleSection {
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  background-color: rgba(241, 245, 249, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 1rem;
+  box-shadow: 0 18px 35px -32px rgba(15, 23, 42, 0.45);
+}
+
+.exampleIntro {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.exampleLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(15, 23, 42, 0.55);
+}
+
+.exampleTitle {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 600;
+}
+
+.exampleDescription {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.7);
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  line-height: 1.6;
+  max-width: 70ch;
+}
