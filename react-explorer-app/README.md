@@ -8,10 +8,12 @@ Spin up the app, pick a card, and trigger the interactions. Each demo nudges you
 
 ## Current Features
 
-- **Hooks in Action** – Try core hooks and compare them with the legacy patterns they replace.
-- **State Management Tours** – Experiment with prop drilling, reducers, and shared stores already in the project.
-- **Design Experiments** – Inspect how styling and component structure shift with each approach.
-- **DevTools Prompts** – Inline tips show where to watch network requests and console output.
+- **React Hooks Showdowns** – Compare class-based lifecycles with hook-driven state, effects, refs, memoization, and layout effects.
+- **State Management Journeys** – Move from local state into prop drilling, reducers, and a shared Zustand store.
+- **Dynamic Loading Strategies** – Explore dynamic imports, lazy boundaries, preload hints, prefetch flows, and deferred widgets.
+- **Data Fetching Labs** – Inspect React Query fundamentals, hover-to-prefetch dashboards, and static asset warmups.
+- **Skeleton UX Patterns** – Watch skeleton screens reserve layout and shimmer while API calls resolve.
+- **JSX vs TSX Reference** – Contrast JavaScript and TypeScript React Query implementations to highlight typing ergonomics.
 
 ## Upcoming
 

@@ -36,22 +36,34 @@ export default function HomePage() {
 
   const currentFeatures = [
     {
-      title: "Hooks in Action",
-      detail: "Try core hooks alongside the legacy patterns they replace.",
-    },
-    {
-      title: "State Management Tours",
+      title: "React Hooks Showdowns",
       detail:
-        "Play with prop drilling, reducers, and shared stores already built in.",
+        "Pit class lifecycles against hook-driven state, effects, refs, memoization, and layout effects.",
     },
     {
-      title: "Design Experiments",
-      detail: "Inspect how styling and structure evolve across examples.",
-    },
-    {
-      title: "DevTools Prompts",
+      title: "State Management Journeys",
       detail:
-        "Follow cues to the console, network tab, and profiler for extra context.",
+        "Walk from local state through prop drilling, reducers, and a shared Zustand store.",
+    },
+    {
+      title: "Dynamic Loading Strategies",
+      detail:
+        "Experiment with dynamic imports, React.lazy, preload hints, prefetching, and deferred widgets.",
+    },
+    {
+      title: "Data Fetching Labs",
+      detail:
+        "Inspect React Query fundamentals, hover-driven prefetch dashboards, and static asset warmups.",
+    },
+    {
+      title: "Skeleton UX Patterns",
+      detail:
+        "Watch skeleton screens reserve layout and shimmer while slower API responses resolve.",
+    },
+    {
+      title: "JSX vs TSX Reference",
+      detail:
+        "Contrast JavaScript and TypeScript React Query components to see typing ergonomics in practice.",
     },
   ];
 

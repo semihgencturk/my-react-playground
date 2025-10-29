@@ -11,6 +11,7 @@ import WithoutUseMemoExample from "./useMemo/WithoutUseMemoExample.js";
 import UseMemoExample from "./useMemo/UseMemoExample.js";
 import WithoutUseCallbackExample from "./useCallback/WithoutUseCallbackExample.js";
 import UseCallbackExample from "./useCallback/UseCallbackExample.js";
+import UseLayoutEffect from "./useLayoutEffect/UseLayoutEffect.js";
 
 export default function ReactHooksPage() {
   return (
@@ -94,6 +95,20 @@ export default function ReactHooksPage() {
           <div className={styles.demoGridPair}>
             <WithoutUseCallbackExample />
             <UseCallbackExample />
+          </div>
+        </section>
+
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>
+            Callback Memoization Before &amp; After Hooks
+          </h2>
+          <p className={styles.sectionCopy}>
+            Creating handlers inside the render path introduces new function
+            references every time. Pairing `useCallback` with `React.memo`
+            stabilises props and reduces wasted renders.
+          </p>
+          <div className={styles.demoGridPair}>
+            <UseLayoutEffect />
           </div>
         </section>
       </div>

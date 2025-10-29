@@ -1,0 +1,126 @@
+.example {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  border-radius: 1.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.12), transparent 65%),
+    rgba(248, 250, 252, 0.98);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 20px 44px -35px rgba(15, 23, 42, 0.45);
+}
+
+.heroCard {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.heroFigure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background: rgba(15, 23, 42, 0.08);
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 400ms ease, filter 400ms ease, opacity 400ms ease;
+}
+.heroImageLoading {
+  filter: saturate(0.65);
+  transform: scale(1.01);
+  opacity: 0.7;
+}
+
+.badgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.statusIdle {
+  background: rgba(15, 23, 42, 0.06);
+  color: rgba(15, 23, 42, 0.63);
+}
+
+.statusLoading {
+  background: rgba(59, 130, 246, 0.16);
+  color: #1d4ed8;
+}
+
+.statusReady {
+  background: rgba(16, 185, 129, 0.2);
+  color: #0f766e;
+}
+
+.statusError {
+  background: rgba(248, 113, 113, 0.22);
+  color: #b91c1c;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.copy {
+  margin: 0;
+  font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+  color: rgba(15, 23, 42, 0.72);
+  max-width: 70ch;
+}
+
+.actionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.actionButton {
+  border: none;
+  border-radius: 999px;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: #f8fafc;
+  box-shadow: 0 16px 32px -28px rgba(37, 99, 235, 0.65);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.actionButton:hover,
+.actionButton:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 20px 36px -30px rgba(37, 99, 235, 0.7);
+  outline: none;
+}
+
+.actionButton:active {
+  transform: translateY(0);
+}
+
+.message {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(15, 23, 42, 0.6);
+}
