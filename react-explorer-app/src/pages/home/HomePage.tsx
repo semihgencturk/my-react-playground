@@ -80,6 +80,11 @@ export default function HomePage() {
       detail:
         "Experiment with transition APIs, deferred values, memoized heavy work, Web Workers, and keyed lists that expose reconciliation gotchas.",
     },
+    {
+      title: "Functions",
+      detail:
+        "Sync-Async, Promise (all, allSettled), cancellation and race, event loop ordering (micro vs macro)",
+    },
   ];
 
   const upcomingItems = [
