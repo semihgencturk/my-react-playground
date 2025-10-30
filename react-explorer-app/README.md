@@ -17,6 +17,7 @@ Spin up the app, pick a card, and trigger the interactions. Each demo nudges you
 - **Skeleton UX Patterns** – Watch skeleton screens reserve layout and shimmer while API calls resolve.
 - **Working With Forms** – React Hook Form examples wired with Hookform Resolver and Zod validation.
 - **Efficient Rendering Playgrounds** – Put concurrency, memoization, conditional mounting, Web Workers, and reconciliation keys to the test in interactive labs.
+- **Functions** – Sync-Async, Promise (all, allSettled), cancellation and race, event loop ordering (micro vs macro)
 
 ## Upcoming
 

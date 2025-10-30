@@ -10,6 +10,7 @@ import EfficientLoadingMoreExamplesPage from "./features/efficient-loading/more-
 import EfficientFetchingExamplesPage from "./features/efficient-fetching/EfficientFetchingExamplesPage.js";
 import EfficientRenderingPage from "@/features/efficient-rendering/EfficientRenderingPage";
 import WorkingWithFormsPage from "@/features/working-with-forms/WorkingWithFormsPage";
+import FunctionsPage from "./features/functions/FunctionsPage";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,6 +24,7 @@ export default function App() {
     { to: "/efficient-rendering-examples", label: "Efficient Rendering" },
     { to: "/working-with-forms", label: "Forms" },
     { to: "/skeleton-examples", label: "Skeleton" },
+    { to: "/functions-examples", label: "Functions"}
   ];
 
   const getLinkClassName = ({ isActive }) =>
@@ -97,6 +99,7 @@ export default function App() {
           element={<StateManagementPage />}
         />
         <Route path="/skeleton-examples" element={<SkeletonShowcasePage />} />
+        <Route path="/functions-examples" element={<FunctionsPage />} />
       </Routes>
     </BrowserRouter>
   );
