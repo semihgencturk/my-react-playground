@@ -2,6 +2,8 @@
 
 A lightweight web app that lets you explore modern React features through live, side-by-side examples.
 
+[Live demo](https://sg-react-explorer.netlify.app/)
+
 ## How It Works
 
 Spin up the app, pick a card, and trigger the interactions. Each demo nudges you to open the browser console, network tab, or profiler so you can see renders, data flows, and effects as they fire.
@@ -14,6 +16,7 @@ Spin up the app, pick a card, and trigger the interactions. Each demo nudges you
 - **Data Fetching Labs** – Inspect React Query fundamentals, hover-to-prefetch dashboards, and static asset warmups.
 - **Skeleton UX Patterns** – Watch skeleton screens reserve layout and shimmer while API calls resolve.
 - **Working With Forms** – React Hook Form examples wired with Hookform Resolver and Zod validation.
+- **Efficient Rendering Playgrounds** – Put concurrency, memoization, conditional mounting, Web Workers, and reconciliation keys to the test in interactive labs.
 
 ## Upcoming
 

@@ -1,5 +1,5 @@
-import { FeatureItem } from "../../components/FeatureItem.js";
-import { SectionCard } from "../../components/SectionCard.js";
+import { FeatureItem } from "./components/FeatureItem.js";
+import { SectionCard } from "./components/SectionCard.js";
 import styles from "./HomePage.module.css";
 
 export default function HomePage() {
@@ -13,6 +13,11 @@ export default function HomePage() {
       title: "Inspect live data",
       description:
         "Open the network tab to see React Query requests as examples refetch and cache responses.",
+    },
+    {
+      title: "Stress-test performance",
+      description:
+        "Try memoized computations, Web Worker offloading, and virtualization demos to feel how React handles heavy workloads.",
     },
   ];
 
@@ -31,6 +36,11 @@ export default function HomePage() {
       title: "Side-by-Side Patterns",
       description:
         "Compare legacy and modern React approaches in one place so you can feel the ergonomics before adopting them in your next project.",
+    },
+    {
+      title: "Performance Playgrounds",
+      description:
+        "Explore concurrency, memoization, conditional mounting, and keyed reconciliation to see how small tweaks keep UIs responsive.",
     },
   ];
 
@@ -64,6 +74,11 @@ export default function HomePage() {
       title: "Working With Forms",
       detail:
         "Hands-on React Hook Form examples wired with Hookform Resolver and Zod validation.",
+    },
+    {
+      title: "Efficient Rendering Playgrounds",
+      detail:
+        "Experiment with transition APIs, deferred values, memoized heavy work, Web Workers, and keyed lists that expose reconciliation gotchas.",
     },
   ];
 

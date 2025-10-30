@@ -1,0 +1,229 @@
+.card {
+  display: grid;
+  gap: 1.6rem;
+  padding: clamp(1.4rem, 3vw, 1.9rem);
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.header {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 0.92rem;
+  color: rgba(15, 23, 42, 0.7);
+  line-height: 1.55;
+}
+
+.examples {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.example {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.exampleTitle {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.exampleDescription {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(15, 23, 42, 0.68);
+  line-height: 1.5;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.controlLabel {
+  font-size: 0.88rem;
+  color: rgba(15, 23, 42, 0.7);
+}
+
+.slider {
+  width: min(220px, 100%);
+}
+
+.listViewport {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.02);
+}
+
+.listRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
+  gap: 0.3rem 0.6rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.23);
+}
+
+.listRow:nth-child(even) {
+  background: rgba(59, 130, 246, 0.07);
+}
+
+.listRowPrimary {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-weight: 600;
+}
+
+.listRowSecondary {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 0.82rem;
+  color: rgba(15, 23, 42, 0.65);
+}
+
+.listRowMeta {
+  grid-row: span 2;
+  justify-self: end;
+  display: grid;
+  gap: 0.35rem;
+  align-content: center;
+  text-align: right;
+}
+
+.requestId {
+  font-size: 0.82rem;
+  color: rgba(15, 23, 42, 0.65);
+  letter-spacing: 0.02em;
+}
+
+.serviceName {
+  font-size: 0.95rem;
+  color: rgba(15, 23, 42, 0.88);
+}
+
+.regionBadge {
+  font-size: 0.78rem;
+  padding: 0.25rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.15);
+  color: rgba(37, 99, 235, 0.85);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.endpoint {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, SFMono-Regular,
+    Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.timestamp {
+  font-variant-numeric: tabular-nums;
+}
+
+.duration {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(15, 23, 42, 0.85);
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.statusOk {
+  background: rgba(34, 197, 94, 0.2);
+  color: rgba(22, 163, 74, 0.95);
+}
+
+.statusSlow {
+  background: rgba(250, 204, 21, 0.25);
+  color: rgba(202, 138, 4, 0.9);
+}
+
+.statusDown {
+  background: rgba(248, 113, 113, 0.25);
+  color: rgba(220, 38, 38, 0.95);
+}
+
+.listMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.82rem;
+  color: rgba(15, 23, 42, 0.65);
+}
+
+.gridViewport {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.02);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.gridCell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-right: 1px solid rgba(148, 163, 184, 0.22);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+  text-align: center;
+  padding: 0.45rem 0.35rem;
+  color: rgba(15, 23, 42, 0.8);
+}
+
+.gridCellValue {
+  font-size: 0.92rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.gridCellLabel {
+  font-size: 0.72rem;
+  color: rgba(15, 23, 42, 0.7);
+}
+
+.gridMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.82rem;
+  color: rgba(15, 23, 42, 0.65);
+}
