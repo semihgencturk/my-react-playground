@@ -1,10 +1,11 @@
 .navbar {
   position: relative;
   margin: 28px auto 48px;
-  padding: 18px 30px;
+  padding: 18px 26px;
   border-radius: 999px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 18px;
   max-width: min(920px, 90vw);
   background: linear-gradient(120deg, rgba(59, 130, 246, 0.12), rgba(124, 58, 237, 0.12)),
@@ -23,6 +24,95 @@
   z-index: -1;
   background: radial-gradient(circle at top, rgba(99, 102, 241, 0.18), transparent 68%);
   opacity: 0.9;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.menuToggle {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  background: rgba(255, 255, 255, 0.92);
+  color: #1d4ed8;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.menuToggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.18);
+}
+
+.menuToggle:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.menuToggleLabel {
+  font-size: 0.95rem;
+}
+
+.menuIcon {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+.menuIcon::before,
+.menuIcon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 999px;
+  transition: transform 0.2s ease, top 0.2s ease;
+}
+
+.menuIcon::before {
+  top: -6px;
+}
+
+.menuIcon::after {
+  top: 6px;
+}
+
+.menuToggle:focus-visible {
+  outline: 2px solid rgba(59, 130, 246, 0.6);
+  outline-offset: 2px;
+}
+
+.linksOpen {
+}
+
+.menuToggle[aria-expanded="true"] .menuIcon {
+  background: transparent;
+}
+
+.menuToggle[aria-expanded="true"] .menuIcon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menuToggle[aria-expanded="true"] .menuIcon::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 .link {
@@ -72,15 +162,30 @@
   transform: translateY(-1px);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 820px) {
   .navbar {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 18px 20px;
+    gap: 14px;
+  }
+
+  .menuToggle {
+    display: flex;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
     gap: 12px;
-    padding: 16px 20px;
+    width: 100%;
+  }
+
+  .linksOpen {
+    display: flex;
   }
 
   .link {
-    flex: 1 1 calc(50% - 12px);
-    text-align: center;
+    width: 100%;
   }
 }

@@ -1,0 +1,125 @@
+.section {
+  display: grid;
+  gap: clamp(1.75rem, 3vw, 2.4rem);
+  padding: clamp(1.6rem, 3vw, 2.4rem);
+  border-radius: 20px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.08), #fff);
+  color: #0f172a;
+}
+
+.header {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.lead {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: rgba(15, 23, 42, 0.72);
+  max-width: 68ch;
+}
+
+.toolbar {
+  display: grid;
+  gap: 1rem;
+}
+
+.controlGroup {
+  display: grid;
+  gap: 0.45rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: rgba(15, 23, 42, 0.8);
+}
+
+.input {
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 0.65rem 0.9rem;
+  font-size: 0.95rem;
+  transition: border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: rgba(37, 99, 235, 0.65);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.statusRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  align-items: center;
+  font-size: 0.9rem;
+  color: rgba(15, 23, 42, 0.7);
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.08);
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: rgba(15, 23, 42, 0.75);
+}
+
+.pending {
+  background: rgba(250, 204, 21, 0.18);
+  color: rgba(180, 83, 9, 0.9);
+}
+
+.lists {
+  display: grid;
+  gap: 1.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.listCard {
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  padding: 1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.listTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.listMeta {
+  margin: 0;
+  font-size: 0.84rem;
+  color: rgba(15, 23, 42, 0.6);
+}
+
+.resultList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.resultItem {
+  padding: 0.5rem 0.6rem;
+  border-radius: 10px;
+  background: rgba(148, 163, 184, 0.12);
+  font-size: 0.9rem;
+}
