@@ -22,6 +22,7 @@
     "@tanstack/react-virtual": "^3.13.12",
     "@types/react-virtualized": "^9.22.3",
     "@vitejs/plugin-react": "^5.1.0",
+    "axios": "^1.13.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-hook-form": "^7.65.0",
