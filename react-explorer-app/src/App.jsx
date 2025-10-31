@@ -11,12 +11,15 @@ import EfficientFetchingExamplesPage from "./features/efficient-fetching/Efficie
 import EfficientRenderingPage from "@/features/efficient-rendering/EfficientRenderingPage";
 import WorkingWithFormsPage from "@/features/working-with-forms/WorkingWithFormsPage";
 import FunctionsPage from "./features/functions/FunctionsPage";
+import ListingPage from "./features/use-cases/listing-pages/ListingPage";
+import ScrollingListingPage from "./features/use-cases/listing-pages/ScrollingListingPage";
+import PaginatedListingPage from "./features/use-cases/listing-pages/PaginatedListingPage";
+import ComponentLifecycles from "./features/lifecycle-examples/ComponentLifecycles";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { to: "/", label: "Home", end: true },
     { to: "/react-hooks-examples", label: "React Hooks" },
     { to: "/state-management-examples", label: "State Management" },
     { to: "/efficient-loading-examples", label: "Efficient Loading" },
@@ -24,7 +27,9 @@ export default function App() {
     { to: "/efficient-rendering-examples", label: "Efficient Rendering" },
     { to: "/working-with-forms", label: "Forms" },
     { to: "/skeleton-examples", label: "Skeleton" },
-    { to: "/functions-examples", label: "Functions"}
+    { to: "/functions-examples", label: "Functions"},
+    { to: "/listing-page", label: "Listing Page Example"},
+    { to: "/component-lifecycles", label: "Component Lifecycles"}
   ];
 
   const getLinkClassName = ({ isActive }) =>
@@ -100,6 +105,11 @@ export default function App() {
         />
         <Route path="/skeleton-examples" element={<SkeletonShowcasePage />} />
         <Route path="/functions-examples" element={<FunctionsPage />} />
+        <Route path="/listing-page" element={<ListingPage />} />
+        <Route path="/paginated-listing-page" element={<PaginatedListingPage />} />
+        <Route path="/scrolling-listing-page" element={<ScrollingListingPage />} />
+        <Route path="/component-lifecycles" element={<ComponentLifecycles />} />
+        
       </Routes>
     </BrowserRouter>
   );
